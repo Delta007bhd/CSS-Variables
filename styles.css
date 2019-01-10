@@ -7,7 +7,7 @@
 }
 
 nav{
-    --link-color: #000;
+    --link-color: #000; /* variable gets overwritten within nav only while other links remain orange since these are declared in the root */
 }
 
 @media screen and (max-width: 760px){
@@ -28,7 +28,7 @@ body{
 }
 
 nav.main-nav ul{
-    width: 600px;
+    max-width: 600px; /* max-width iso width is more responsive */
     margin: 30px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -50,7 +50,7 @@ nav a{
 }
 
 .content{
-    width: 760px;
+    max-width: 760px; /* max-width iso width is more responsive */
     margin: 0 auto;
     position: relative;
     top: -100px;
