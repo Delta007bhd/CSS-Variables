@@ -6,6 +6,18 @@
     --grid-layout: 1fr 1fr 1fr;
 }
 
+.swatches {   /* centered color buttons on page */
+  text-align: center;
+}
+
+.swatches span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
 nav{
     --link-color: #000;
 }
@@ -28,7 +40,7 @@ body{
 }
 
 nav.main-nav ul{
-    width: 600px;
+    max-width: 600px;
     margin: 30px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -50,17 +62,20 @@ nav a{
 }
 
 .content{
-    width: 760px;
+    max-width: 760px;
     margin: 0 auto;
     position: relative;
     top: -100px;
     padding: 40px 60px;
-    background: #fff
+    background: #fff;
 }
 
 .spot{
     margin: 0 40px 80px;
+    padding: 30px;
     text-align: center;
+    box-shadow: 5px 2px 20px grey; /* added a box-shadow */
+        /* h-offset v-offset blur spread color */
 }
 
 .spot h2{
@@ -96,12 +111,4 @@ footer .blurb{
     color: #333;
     line-height: 2em;
     font-size: 0.9em
-}
-
-.swatches span{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-    cursor: pointer;
 }
